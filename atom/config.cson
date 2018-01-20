@@ -1,0 +1,66 @@
+"*":
+  "atom-beautify":
+    css:
+      beautify_on_save: true
+      indent_size: 2
+      newline_between_rules: false
+      preserve_newlines: true
+      selector_separator_newline: true
+    general:
+      _analyticsUserId: "79831183-0c13-40f4-abe0-701b0dd6ba67"
+    html:
+      indent_size: 2
+  "auto-copyright":
+    owner: "CERN"
+    template: '''
+      # -*- coding: utf-8 -*-
+      #
+      # This file is part of Invenio.
+      # Copyright (C) %y %o.
+      #
+      # Invenio is free software; you can redistribute it
+      # and/or modify it under the terms of the GNU General Public License as
+      # published by the Free Software Foundation; either version 2 of the
+      # License, or (at your option) any later version.
+      #
+      # Invenio is distributed in the hope that it will be
+      # useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+      # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+      # General Public License for more details.
+      #
+      # You should have received a copy of the GNU General Public License
+      # along with Invenio; if not, write to the
+      # Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+      # MA 02111-1307, USA.
+      #
+      # In applying this license, CERN does not
+      # waive the privileges and immunities granted to it by virtue of its status
+      # as an Intergovernmental Organization or submit itself to any jurisdiction.
+    '''
+  "autocomplete-python":
+    useKite: false
+  core:
+    disabledPackages: [
+      "goto-definition"
+    ]
+    telemetryConsent: "no"
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "264c1100-c526-07df-3ca3-2ff21d502625"
+  "git-blame":
+    columnWidth: 311
+  "linter-ui-default": {}
+  "markdown-preview":
+    breakOnSingleNewline: true
+  "project-manager":
+    alwaysOpenInSameWindow: true
+    includeGitRepositories: true
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false

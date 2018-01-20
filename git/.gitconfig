@@ -1,0 +1,56 @@
+[user]
+    name = Jose Benito Gonzalez Lopez
+    email = myemail@test.com
+
+[core]
+    whitespace = tab-in-indent
+    editor = vim
+
+[github]
+    token = xxxxxxxxxxxxxxxxxxxx
+    user = jbenito3
+
+[color]
+    ui = true
+    diff = auto
+    status = auto
+    branch = auto
+
+[ui]
+   merge = diffuse
+
+[alias]
+    st = status
+    mst = status -sb
+    co = checkout
+    cb = checkout -b
+    puff = pull --ff-only
+    purr = pull --rebase
+    fall = fetch --all
+    dlog = log --decorate --stat
+    flog = log -p --decorate --stat
+    mlog = log --oneline --decorate
+    glog = log --oneline --decorate --graph --all
+    last = log -l HEAD
+    lg = log --color --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset %C(bold yellow)[%cn]%Creset' --abbrev-commit
+    k = log --graph --decorate --pretty=format:'%C(blue)%d%Creset %C(yellow)%h%Creset %s, %C(bold green)%an%Creset, %C(green)%cd%Creset' --date=relative
+    #clean-remote = "!f(){ echo \"$1\"; git for-each-ref --format=\"%(refname)\" refs/remotes/\"$1\" | while read ref; do echo $ref; git update-ref -d \"$ref\"; done; }; f"
+    #humiliate = "!sh -c 'RECIPIENTS=`git blame $0 -e -L $1 | sed \"s/.* (<\\(.*\\)> .*/\\1/\" | sort | uniq | paste -sd \",\" -` ; git blame $0 -L $1 | mail -s \"WTF is this?\" $RECIPIENTS;'"
+    #push-wip = "!pushit() { export BRANCH=\"$(git-rev-parse --symbolic-full-name --abbrev-ref HEAD)\"; export REMOTE=\"$(git config --get wip.public)\"; export WEB_HOOK=\"$(git config --get wip.webhook)\" ; git-push $REMOTE $1 \"$BRANCH:wip/$BRANCH\" 2>&1 | tee /dev/tty | grep -q 'To ' && curl -sS $WEB_HOOK --data-urlencode \"branch=$BRANCH\" --data-urlencode \"name=$(git config --get user.name)\" --data-urlencode \"remote=`git remote show -n $REMOTE | sed -n 2p | sed 's/.*[:\\/]\\([a-zA-Z]*\\)\\/\\(.*\\)\\.git/\\1\\/\\2/'`\" > /dev/null ;}; pushit"
+    #change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ $`echo $VAR` = \\\"$OLD\\\" ]]; then export $VAR=\\\"$NEW\\\"; fi\" $@; }; f "
+    #rh = "!f(){ BRANCH=\"$(git-rev-parse --symbolic-full-name --abbrev-ref HEAD)\" && git checkout $1 && git rebase $BRANCH && git checkout $BRANCH && git merge $1; }; f"
+    #pigamend = "!f(){ git add -u && git commit --amend --no-edit; }; f"
+    #pru = "!f(){ git fetch upstream && git rebase --autosquash upstream/$@; }; f"
+
+[rerere]
+    enabled = 1
+
+[push]
+    default = simple
+[merge]
+	tool = opendiff
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
