@@ -1,0 +1,135 @@
+[
+  {
+    title: "Indico Mattermost"
+    group: "indico"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/indico-mattermost"
+    ]
+  }
+  {
+    title: "inveniosoftware.org"
+    group: "invenio"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/inveniosoftware.org"
+    ]
+  }
+  {
+    title: "CDS puppet"
+    group: "cds"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/it-puppet-hostgroup-cds"
+      "/Users/jbenito/cernbox/CERN/dev/src/it-puppet-module-invenio"
+    ]
+  }
+  {
+    title: "CDS prod"
+    group: "CDS"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/cds-invenio-cern"
+    ]
+  }
+  {
+    title: "CDS Invenio"
+    group: "CDS"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/cds-invenio"
+    ]
+  }
+  {
+    title: "Invenio"
+    group: "Invenio"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/invenio"
+    ]
+  }
+  {
+    title: "Invenio Webhooks"
+    group: "Invenio"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/invenio-webhooks"
+    ]
+  }
+  {
+    title: "ClaimStore"
+    group: "ClaimStore"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/claimstore"
+    ]
+  }
+  {
+    title: "Kwalitee"
+    group: "Kwalitee"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/kwalitee"
+    ]
+  }
+  {
+    title: "CDA site"
+    group: "CDA"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/cda-group"
+    ]
+  }
+  {
+    title: "CDS"
+    group: "cds"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/cds"
+      "/Users/jbenito/cernbox/CERN/dev/src/cds-js"
+    ]
+    devMode: true
+  }
+  {
+    title: "Invenio Puppet"
+    group: "invenio"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/it-puppet-module-invenio"
+    ]
+    devMode: true
+  }
+  {
+    title: "Invenio App Ils"
+    group: "invenio"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/invenio-app-ils"
+      "/Users/jbenito/.virtualenvs/invenio-ils/lib/python3.6/site-packages"
+    ]
+    devMode: true
+  }
+  {
+    title: "Invenio Records"
+    group: "invenio"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/invenio-records"
+    ]
+    devMode: true
+  }
+  {
+    title: "Invenio Jsonschemas"
+    group: "invenio"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/invenio-jsonschemas"
+    ]
+  }
+  {
+    title: "Invenio Db"
+    group: "invenio"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/invenio-db"
+    ]
+  }
+  {
+    title: "Internal Docs"
+    group: "DR"
+    paths: [
+      "/Users/jbenito/cernbox/CERN/dev/src/internal-docs"
+    ]
+  }
+  {
+    title: "Avaroom"
+    group: "personal"
+    paths: [
+      "/Users/jbenito/cernbox/Personal/work/src/avaroom"
+    ]
+  }
+]
