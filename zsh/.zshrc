@@ -95,6 +95,8 @@ source /usr/local/bin/virtualenvwrapper.sh
 export FZF_DEFAULT_OPTS="--no-mouse --height 50% -1 --reverse --multi --inline-info --preview 'bat --color \"always\" {}' --color=hl+:37 --color bg+:136,hl+:229"
 export FZF_CTRL_T_OPTS="--select-1 --exit-0"
 export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
